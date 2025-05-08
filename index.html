@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>CV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+</head>
+<body class="bg-white text-black font-sans">
+    <!-- Sticky Navigation -->
+    <nav class="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-xl font-bold tracking-tight">Hello There ...</a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-4">
+                    <a href="#home" class="nav-link hover:text-gray-600 transition">Home</a>
+                    <a href="#about" class="nav-link hover:text-gray-600 transition">About</a>
+                    <a href="#skills" class="nav-link hover:text-gray-600 transition">Skills</a>
+                    <a href="#projects" class="nav-link hover:text-gray-600 transition">Projects</a>
+                    <a href="#contact" class="nav-link hover:text-gray-600 transition">Contact</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="p-4 focus:outline-none">
+                        <svg id="menu-icon" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                        <svg id="close-icon" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu md:hidden bg-white border-t border-gray-200">
+            <div class="px-2 pt-2 pb-4 space-y-1">
+                <a href="#home" class="block nav-link hover:bg-gray-100">Home</a>
+                <a href="#about" class="block nav-link hover:bg-gray-100">About</a>
+                <a href="#skills" class="block nav-link hover:bg-gray-100">Skills</a>
+                <a href="#projects" class="block nav-link hover:bg-gray-100">Projects</a>
+                <a href="#contact" class="block nav-link hover:bg-gray-100">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-b from-white to-gray-100 px-4">
+        <div class="max-w-6xl mx-auto py-20 md:py-32">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4">Hello, I'm <span class="border-b-4 border-black">Mohamed</span></h1>
+                    <p class="text-xl md:text-2xl mb-8">Full Stack Developer specializing in modern web technologies.</p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#projects" class="px-6 py-4 bg-black text-white rounded hover:bg-gray-800 transition text-center">View Work</a>
+                        <a href="#contact" class="px-6 py-4 border-2 border-black rounded hover:bg-gray-100 transition text-center">Contact Me</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center mt-10 md:mt-0">
+                    <div class="w-48 h-48 md:w-64 md:h-64 rounded-full border-4 md:border-8 border-black overflow-hidden">
+                        <img src="z11.jpg" alt="Profile" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold mb-8 section-title">About Me</h2>
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/2">
+                    <p class="text-lg mb-6 leading-relaxed">
+                        I'm a passionate full-stack developer with expertise in both frontend and backend technologies. 
+                        I love creating clean, efficient, and user-friendly web applications that solve real-world problems.
+                    </p>
+                    <p class="text-lg mb-6 leading-relaxed">
+                        With a strong foundation in HTML, CSS, and JavaScript, I specialize in building responsive and 
+                        interactive user interfaces. On the backend, I work with PHP and MongoDB to create robust APIs 
+                        and database solutions.
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        When I'm not coding, you can find me exploring new technologies.</p>
+                </div>
+                <div class="md:w-1/2 mt-8 md:mt-0">
+                    <div class="border-2 border-black p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-4">Experience</h3>
+                        <div class="space-y-6">
+                            <div>
+                                <h4 class="font-semibold">full-stack Developer</h4>
+                                <p class="text-gray-600">Freelance • 2021 - Present</p>
+                                <p class="mt-2">Developed responsive web applications using modern JavaScript frameworks.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="md:w-1/2 mt-8 md:mt-0">
+                        <div class="border-2 border-black p-6 rounded-lg">
+                            <h3 class="text-xl font-bold mb-4">Education</h3>
+                            <div class="space-y-6">
+                                <div>
+                                    <h4 class="font-semibold">AAST</h4>
+                                    <p class="text-gray-600">Majored in BIS • 2019 - 2024</p>
+                                    
+                                    <h4 class="font-semibold">fWD Course</h4>
+                                    <p class="text-gray-600">full-stack web-dev Course • 2022</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-gray-100 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold mb-8 section-title">My Skills</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Frontend Skills -->
+                <div class="border-2 border-black p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-6 flex items-center">
+                        <i class="fas fa-laptop-code mr-3"></i> Frontend Development
+                    </h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>HTML</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="w-full bg-gray-300 h-2">
+                                <div class="bg-black h-2" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>CSS</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="w-full bg-gray-300 h-2">
+                                <div class="bg-black h-2" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>JavaScript</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="w-full bg-gray-300 h-2">
+                                <div class="bg-black h-2" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>Bootstrap</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="w-full bg-gray-300 h-2">
+                                <div class="bg-black h-2" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Backend Skills -->
+                <div class="border-2 border-black p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-6 flex items-center">
+                        <i class="fas fa-server mr-3"></i> Backend Development
+                    </h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>JavaScript (Node.js)</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="w-full bg-gray-300 h-2">
+                                <div class="bg-black h-2" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>PHP</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="w-full bg-gray-300 h-2">
+                                <div class="bg-black h-2" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>MongoDB</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="w-full bg-gray-300 h-2">
+                                <div class="bg-black h-2" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>FireBase</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="w-full bg-gray-300 h-2">
+                                <div class="bg-black h-2" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Projects Section -->
+<section id="projects" class="py-16 bg-white px-4">
+    <div class="max-w-4xl mx-auto">  <!-- Increased container width -->
+        <h2 class="text-3xl font-bold mb-12 text-center section-title">My Projects</h2>
+        
+        <div class="flex flex-col gap-12">
+            <!-- Mobile Project (Top) -->
+            <div>
+                <!-- Project info above mobile frame -->
+                <div class="text-center mb-6">
+                    <h3 class="text-2xl font-bold mb-2">Mobile App</h3>
+                    <p class="text-gray-600 mb-4">A cross-platform mobile application built with Flutter connect to google firebase database</p>
+                    <div class="flex flex-wrap gap-2 justify-center">
+                        <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">Flutter</span>
+                        <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">Firebase</span>
+                        <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">iOS/Android</span>
+                    </div>
+                </div>
+                
+                <!-- Larger mobile device frame -->
+                <div class="relative mx-auto" style="width: 430px;">  
+                    <!-- Mobile frame decoration -->
+                    <div class="absolute inset-0 border-4 border-black rounded-[40px] pointer-events-none z-10"></div>
+                      <!-- More rounded corners -->
+                    <div class="absolute top-6 left-1/2 transform -translate-x-1/2 w-20 h-1.5 bg-black rounded-full pointer-events-none z-10"></div>
+                   
+ <!-- Mobile content - images only -->
+ <div class="relative h-[640px]  overflow-hidden bg-white rounded-[36px]"> 
+
+                  
+                        <!-- Mobile project slides -->
+                        <div class="flex transition-transform duration-500 ease-in-out h-full" id="mobile-slides">
+                            <div class="min-w-full h-full">
+                                <img src="flutter_project/1.png" 
+                                     class="w-full h-full object-cover" 
+                                     alt="Mobile App Screenshot 1">
+                            </div>
+                            <div class="min-w-full h-full">
+                                <img src="flutter_project/2.png" 
+                                     class="w-full h-full object-cover" 
+                                     alt="Mobile App Screenshot 2">
+                            </div>
+                            <div class="min-w-full h-full">
+                                <img src="flutter_project/3.png" 
+                                     class="w-full h-full object-cover" 
+                                     alt="Mobile App Screenshot 3">
+                            </div>
+                            <div class="min-w-full h-full">
+                                <img src="flutter_project/4.png" 
+                                     class="w-full h-full object-cover" 
+                                     alt="Mobile App Screenshot 4">
+                            </div>
+                            <div class="min-w-full h-full">
+                                <img src="flutter_project/5.png" 
+                                     class="w-full h-full object-cover" 
+                                     alt="Mobile App Screenshot 5">
+                            </div>
+                            <div class="min-w-full h-full">
+                                <img src="flutter_project/6.png" 
+                                     class="w-full h-full object-cover" 
+                                     alt="Mobile App Screenshot 6">
+                            </div>
+                            <div class="min-w-full h-full">
+                                <img src="flutter_project/7.png" 
+                                     class="w-full h-full object-cover" 
+                                     alt="Mobile App Screenshot 7">
+                            </div>
+                            <div class="min-w-full h-full">
+                                <img src="flutter_project/8.png" 
+                                     class="w-full h-full object-cover" 
+                                     alt="Mobile App Screenshot 8">
+                            </div>
+                            <div class="min-w-full h-full">
+                                <img src="flutter_project/9.png" 
+                                     class="w-full h-full object-cover" 
+                                     alt="Mobile App Screenshot 9">
+                            </div>
+                            <div class="min-w-full h-full">
+                                <img src="flutter_project/10.png" 
+                                     class="w-full h-full object-cover" 
+                                     alt="Mobile App Screenshot 10">
+                            </div>
+                            <div class="min-w-full h-full">
+                                <img src="flutter_project/11.png" 
+                                     class="w-full h-full object-cover" 
+                                     alt="Mobile App Screenshot 11">
+                            </div>
+                            <div class="min-w-full h-full">
+                                <img src="flutter_project/12.png" 
+                                     class="w-full h-full object-cover" 
+                                     alt="Mobile App Screenshot 12">
+                            </div>
+                        </div>
+                        
+                        <!-- Navigation dots -->
+                        <div class="absolute bottom-4 left-0 right-0 flex justify-center space-x-2">
+                            <span class="mobile-dot w-2 h-2 rounded-full bg-black bg-opacity-50 cursor-pointer" onclick="goToMobileSlide(0)"></span>
+                            <span class="mobile-dot w-2 h-2 rounded-full bg-black bg-opacity-50 cursor-pointer" onclick="goToMobileSlide(1)"></span>
+                            <span class="mobile-dot w-2 h-2 rounded-full bg-black bg-opacity-50 cursor-pointer" onclick="goToMobileSlide(2)"></span>
+                            <span class="mobile-dot w-2 h-2 rounded-full bg-black bg-opacity-50 cursor-pointer" onclick="goToMobileSlide(3)"></span>
+                            <span class="mobile-dot w-2 h-2 rounded-full bg-black bg-opacity-50 cursor-pointer" onclick="goToMobileSlide(4)"></span>
+                            <span class="mobile-dot w-2 h-2 rounded-full bg-black bg-opacity-50 cursor-pointer" onclick="goToMobileSlide(5)"></span>
+                            <span class="mobile-dot w-2 h-2 rounded-full bg-black bg-opacity-50 cursor-pointer" onclick="goToMobileSlide(6)"></span>
+                            <span class="mobile-dot w-2 h-2 rounded-full bg-black bg-opacity-50 cursor-pointer" onclick="goToMobileSlide(7)"></span>
+                            <span class="mobile-dot w-2 h-2 rounded-full bg-black bg-opacity-50 cursor-pointer" onclick="goToMobileSlide(8)"></span>
+                            <span class="mobile-dot w-2 h-2 rounded-full bg-black bg-opacity-50 cursor-pointer" onclick="goToMobileSlide(9)"></span>
+                            <span class="mobile-dot w-2 h-2 rounded-full bg-black bg-opacity-50 cursor-pointer" onclick="goToMobileSlide(10)"></span>
+                            <span class="mobile-dot w-2 h-2 rounded-full bg-black bg-opacity-50 cursor-pointer" onclick="goToMobileSlide(11)"></span>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desktop Project (Bottom) -->
+            <div>
+                <!-- Project info above desktop frame -->
+                <div class="text-center mb-4">
+                    <h3 class="text-2xl font-bold mb-2">Desktop Application</h3>
+                    <p class="text-gray-600 mb-4">A responsive web application with admin dashboard to upload products to live mongo database</p>
+                    <div class="flex flex-wrap gap-2 justify-center">
+                        <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">JavaScript</span>
+                        <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">Node.js</span>
+                        <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">MongoDB</span>
+                    </div>
+                </div>
+                
+                <!-- Desktop window frame -->
+                <div class="border-t-8 border-gray-400 rounded-t-lg overflow-hidden shadow-lg">
+                    <div class="flex items-center bg-gray-200 px-4 py-2">
+                        <div class="flex space-x-2">
+                            <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                        </div>
+                        <div class="text-center flex-grow text-sm text-gray-600">Supplify.com</div>
+                    </div>
+                    
+                    <!-- Desktop content - images only -->
+                    <div class="relative h-90 bg-white">
+                        <!-- Desktop project slides -->
+                        <div class="flex transition-transform duration-500 ease-in-out h-full" id="desktop-slides">
+                            <div class="min-w-full h-full">
+                                <img src="website_ss/1.png" 
+                                     class="w-full h-full object-contain bg-gray-50 p-2" 
+                                     alt="Desktop App Screenshot 1">
+                            </div>
+                            <div class="min-w-full h-full">
+                                <img src="website_ss/2.png" 
+                                     class="w-full h-full object-contain bg-gray-50 p-2" 
+                                     alt="Desktop App Screenshot 2">
+                            </div>
+                            <div class="min-w-full h-full">
+                                <img src="website_ss/3.png" 
+                                     class="w-full h-full object-contain bg-gray-50 p-2" 
+                                     alt="Desktop App Screenshot 3">
+                            </div>
+                            <div class="min-w-full h-full">
+                                <img src="website_ss/4.png" 
+                                     class="w-full h-full object-contain bg-gray-50 p-2" 
+                                     alt="Desktop App Screenshot 4">
+                            </div>
+                            <div class="min-w-full h-full">
+                                <img src="website_ss/5.png" 
+                                     class="w-full h-full object-contain bg-gray-50 p-2" 
+                                     alt="Desktop App Screenshot 5">
+                            </div>
+                            <div class="min-w-full h-full">
+                                <img src="website_ss/6.png" 
+                                     class="w-full h-full object-contain bg-gray-50 p-2" 
+                                     alt="Desktop App Screenshot 6">
+                            </div>
+                            <div class="min-w-full h-full">
+                                <img src="website_ss/7.png" 
+                                     class="w-full h-full object-contain bg-gray-50 p-2" 
+                                     alt="Desktop App Screenshot 7">
+                            </div>
+                            <div class="min-w-full h-full">
+                                <img src="website_ss/8.png" 
+                                     class="w-full h-full object-contain bg-gray-50 p-2" 
+                                     alt="Desktop App Screenshot 8">
+                            </div>
+                            <div class="min-w-full h-full">
+                                <img src="website_ss/9.png" 
+                                     class="w-full h-full object-contain bg-gray-50 p-2" 
+                                     alt="Desktop App Screenshot 9">
+                            </div>
+                            <div class="min-w-full h-full">
+                                <img src="website_ss/10.png" 
+                                     class="w-full h-full object-contain bg-gray-50 p-2" 
+                                     alt="Desktop App Screenshot 10">
+                            </div>
+                            <div class="min-w-full h-full">
+                                <img src="website_ss/11.png" 
+                                     class="w-full h-full object-contain bg-gray-50 p-2" 
+                                     alt="Desktop App Screenshot 11">
+                            </div>
+                           
+                        </div>
+                        
+                        <!-- Navigation arrows -->
+                        <button class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full" 
+                                onclick="prevDesktopSlide()">
+                            &#10094;
+                        </button>
+                        <button class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full" 
+                                onclick="nextDesktopSlide()">
+                            &#10095;
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Contact Section -->
+<section id="contact" class="py-16 bg-gray-100 px-4">
+    <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold mb-12 section-title">Get In Touch</h2>
+        
+        <div class="flex flex-col md:flex-row gap-12">
+            <div class="md:w-1/2">
+                <div class="border-2 border-black p-8 rounded-lg">
+                    <h3 class="text-xl font-bold mb-6">Contact Information</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold">Email</h4>
+                                <p>rengo6444@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-phone mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold">Phone</h4>
+                                <p>(+20) 1020992493</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold">Location</h4>
+                                <p>Cairo, Egypt</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-10">
+                        <h3 class="text-xl font-bold mb-6">Connect With Me</h3>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/mohamedHeshamMohamed" class="w-10 h-10 rounded-full border-2 border-black flex items-center justify-center hover:bg-black hover:text-white transition">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/mohamed-hesham-a64247245/" class="w-10 h-10 rounded-full border-2 border-black flex items-center justify-center hover:bg-black hover:text-white transition">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+    <!-- Footer -->
+    <footer class="bg-black text-white py-8 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <a href="#" class="text-xl font-bold tracking-tight">GoodBye</a>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#home" class="hover:text-gray-300 transition">Home</a>
+                    <a href="#about" class="hover:text-gray-300 transition">About</a>
+                    <a href="#skills" class="hover:text-gray-300 transition">Skills</a>
+                    <a href="#projects" class="hover:text-gray-300 transition">Projects</a>
+                    <a href="#contact" class="hover:text-gray-300 transition">Contact</a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center md:text-left">
+                <p>&copy; 2025 Mohamed's Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+            const closeIcon = document.getElementById('close-icon');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                // Toggle menu visibility
+                mobileMenu.classList.toggle('open');
+                
+                // Toggle icons
+                menuIcon.classList.toggle('hidden');
+                closeIcon.classList.toggle('hidden');
+            });
+            
+            // Close menu when clicking on a link
+            document.querySelectorAll('#mobile-menu a').forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.remove('open');
+                    menuIcon.classList.remove('hidden');
+                    closeIcon.classList.add('hidden');
+                });
+            });
+            
+            // Close menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!mobileMenu.contains(event.target) && 
+                    !mobileMenuButton.contains(event.target) &&
+                    !event.target.closest('#mobile-menu-button')) {
+                    mobileMenu.classList.remove('open');
+                    menuIcon.classList.remove('hidden');
+                    closeIcon.classList.add('hidden');
+                }
+            });
+            
+            // Smooth scrolling for anchor links with precise offset
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        const navbarHeight = document.querySelector('nav').offsetHeight;
+                        const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                        const offsetPosition = targetPosition - navbarHeight;
+                        
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // iOS specific fixes
+            if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
+                // Fix for iOS viewport height
+                function setViewportHeight() {
+                    let vh = window.innerHeight * 0.01;
+                    document.documentElement.style.setProperty('--vh', `${vh}px`);
+                }
+                
+                setViewportHeight();
+                window.addEventListener('resize', setViewportHeight);
+                
+                // Fix for iOS hover states
+                document.addEventListener('touchstart', function() {}, true);
+            }
+        });
+      // Mobile slider
+    let mobileSlideIndex = 0;
+    const mobileSlides = document.getElementById('mobile-slides');
+    const mobileDots = document.querySelectorAll('.mobile-dot');
+    
+    function updateMobileSlider() {
+        mobileSlides.style.transform = `translateX(-${mobileSlideIndex * 100}%)`;
+        mobileDots.forEach((dot, index) => {
+            dot.classList.toggle('bg-opacity-100', index === mobileSlideIndex);
+            dot.classList.toggle('bg-opacity-50', index !== mobileSlideIndex);
+        });
+    }
+    
+    function goToMobileSlide(index) {
+        mobileSlideIndex = index;
+        updateMobileSlider();
+    }
+    
+    function nextMobileSlide() {
+        mobileSlideIndex = (mobileSlideIndex + 1) % 12;
+        updateMobileSlider();
+    }
+    
+    // Desktop slider
+    let desktopSlideIndex = 0;
+    const desktopSlides = document.getElementById('desktop-slides');
+    
+    function updateDesktopSlider() {
+        desktopSlides.style.transform = `translateX(-${desktopSlideIndex * 100}%)`;
+    }
+    
+    function nextDesktopSlide() {
+        desktopSlideIndex = (desktopSlideIndex + 1) % 11;
+        updateDesktopSlider();
+    }
+    
+    function prevDesktopSlide() {
+        desktopSlideIndex = (desktopSlideIndex - 1 + 2) % 11;
+        updateDesktopSlider();
+    }
+    
+    // Auto-advance sliders
+    setInterval(() => {
+        nextMobileSlide();
+        nextDesktopSlide();
+    }, 4000);
+</script>
+</body>
+</html>
